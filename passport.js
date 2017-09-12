@@ -37,7 +37,7 @@ passport.use(new LocalStrategy({
 passport.use(new FacebookStrategy({
     clientID: '119026562131441',
     clientSecret: '8e6c35b4d5b3d8aa2a23838ab17a1f8e',
-    callbackURL: 'http://localhost:3000/auth/facebook/callback',
+    callbackURL: 'https://collabode.herokuapp.com/auth/facebook/callback',
     profileFields: ['id', 'displayName', 'email']
   },
   function(token, refreshToken, profile, done) {
